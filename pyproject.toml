@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling==1.19.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "github-release-test"
+description = "Only test."
+dynamic = ["version"]
+requires-python = ">=3.12"
+readme = "README.md"
+
+[tool.hatch.version]
+path = "src/test/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/test"]
