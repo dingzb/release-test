@@ -21,6 +21,10 @@ def print_hello_last_name(name):
     print(f'Hello {name} Last')
 
 
+def print_hello_last_name2(name):
+    print(f'Hello {name} Last')
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
